@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html> 
+
+<head>
+    <title> RoomRoam </title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+  <div class="overlay"></div> 
+    <header class="container1">
+
+<div class="headings"> 
+      <img class="headingLogo" src="images/RR(logo).png" alt="Our Website logo" >
+ <h1 class="WebsiteName" > RoomRoam</h1>
+</div>
+
+
+<div class="inputs"> 
+    <label class="searchLabel" for="searchBar"> 🔎︎ </label>
+ <input type="search" id="searchBar" namme="searchBar" placeholder=" Search" value="" required>
+    
+</div>
+       
+       
+        <nav class="navigations"> 
+            <a  class="link" href="" > Rewards</a>
+            <a  class="link" href=""> Discover </a>
+            <a  class="link" href=""> Trips</a>
+            <a  class="link" href=""> Reviews</a>
+
+            <a  class="link" href=""> Language </a>
+             <a  class="signupLink" href="">Sign Up</a>
+
+        </nav>
+
+       
+    </header>
+
+     <div class="underNavigations">
+
+            <a class="link" href="" > Hotels</a>
+            <a class="link" href=""> Things to Do</a>
+            <a  class="link" href=""> Resturants</a>
+            <a  class="link" href=""> Flights</a>
+              <a  class="link" href=""> Cruises</a>
+            <a  class="link" href=""> Vaction Rentals</a>
+            <a  class="link" href=""> Forums</a>
+
+        </div>
+
+
+
+      <div class="main">
+
+<div class="sliderContainer">
+
+    <div class="hotelInput">
+    <label for="hotelSearch"> Browse Hotels Travelers Love!</label>
+    <input type="search" id="hotelSearch" name="hotelSearch" placeholder=" Hotel Name or Destination" value="" required>
+</div>
+
+<figure class="images">
+
+    <img class="sliderImages" src="images/hotelused1.jpg" alt="Hotel1">
+       <img class="sliderImages" src="images/hotelused2.jpg" alt="Hotel2">
+        <img class="sliderImages"  src="images/hotelNum3.webp" alt="Hotel3">
+            <img class="sliderImages"  src="images/hotelNum4.avif" alt="Hotel4">
+         
+</figure>
+
+
+</div>
+
+      </div>  
+
+<div class="section2">
+
+  <div class="featuresHeading"> 
+            <h1>Why Choose RoomRoam</h1>
+        </div>
+        
+      <section class="websiteFeatures">
+     
+        <div class="features">
+            <img src="images/sectionimage1.png" alt="logo1">
+            <h3> Backed by travelers </h3>
+            <p> Book confidently thanks to reviews from <br> travelers who have been there.</p>
+        </div>
+
+          <div class="features">
+            <img src="images/sectionimage2.png" alt="logo2">
+            <h3> Stays for every style </h3>
+            <p>Choose from more than two million hotels <br> with filters to find your perfect fit.</p>
+        </div>
+
+          <div class="features">
+            <img src="images/sectionimage3.png" alt="logo3">
+            <h3> Best rates around </h3>
+            <p>Compare prices from 200+ booking sites <br> to book with the best deal.</p>
+        </div>
+      </section>
+
+
+
+</div>
+
+<div class="topHotelsSection">
+
+  
+<div class="ContainerofTophotelsSlider">
+  <div class="description">
+<h2> Travelers’ Choice: Top hotels</h2>
+<p> Among our top 1% of hotels - decided by travelers.</p>
+  </div>
+
+   <div class="tophotelsimagesWhole">
+  
+    <input type="button" id="backsliderButton" value="🡸" onclick="slideBack()">
+     <input type="button" id="nextsliderButton" value="🡺" onclick="slideforward()">
+      
+ <!-- start of first hotel  -->
+
+
+    <div class="topHotelsimages">
+        
+  
+      
+<a class="hotelsLinks" href="" alt="" > 
+   
+  <img class="hotels"src="/images/ammanHotel.jpeg" alt="International Continantal Hotel "> 
+  <figcaption class="hotelname"> InterContinental Hotel </figcaption> 
+</a>
+  <img class="heartIcon " src="/images/LoveIcon.png" alt="heart icon" onclick="addToLoved()">
+
+<div  class="hotelCaption">
+ 
+   <p> Amman, Jordan</p>
+   <p> 5.0  ⭐⭐⭐⭐⭐ (4,508)</p>
+   <span > from </span>
+      <span class="hotelPrice"> $216 </span>
+</div>
+
+
+
+
+
+    </div>
+<!--  end of first hotel -->
+
+
+<!-- start of second hotel  -->
+
+<div class="topHotelsimages">
+
+<a class="hotelsLinks" href="" alt="" > 
+  <img class="hotels"src="/images/floridahotel.jpg" alt="The Florida Hotel & Conference Center in the Florida Mall"> 
+  <figcaption class="hotelname"> The Florida Hotel & Conference Center</figcaption>
+  
+</a>
+<img class="heartIcon " src="/images/LoveIcon.png" alt="heart icon" onclick="addToLoved()"> 
+<div  class="hotelCaption">
+  
+   <p> florida, The United States</p>
+
+   <p> 3.0  ⭐⭐⭐ (4,508)</p>
+   <span> from </span>
+      <span class="hotelPrice"> $160 </span>
+</div>
+
+    </div>
+
+    <!-- end of second hotel  -->
+
+    <!-- start of third hotel -->
+
+    <div class="topHotelsimages">
+
+<a class="hotelsLinks" href="" alt="" > 
+  <img class="hotels"src="/images/hoteldubai.webp" alt="Atlantis the Palm Hotel"> 
+  <figcaption class="hotelname"> Atlantis, the Palm Hotel</figcaption>
+  
+</a>
+<img class="heartIcon " src="images/LoveIcon.png" alt="heart icon" onclick="addToLoved()"> 
+<div  class="hotelCaption">
+
+   <p> Dubai, The United Arab Emarites</p>
+
+   <p> 5.0  ⭐⭐⭐⭐⭐ (4,508)</p>
+   <span> from </span>
+      <span class="hotelPrice"> $319 </span>
+</div>
+
+
+    </div>
+
+    <!-- end of third hotel -->
+
+    <!-- start of fourth hotel -->
+
+    <div class="topHotelsimages">
+
+<a class="hotelsLinks" href="" alt="" > 
+  <img class="hotels"src="/images/hotelMonaco.jpg" alt="The Hôtel de Paris"> 
+  <figcaption class="hotelname"> The Hôtel de Paris </figcaption>
+ 
+</a>
+ <img class="heartIcon " src="/images/LoveIcon.png" alt="heart icon" onclick=" addToLoved()"> 
+
+<div class="hotelCaption">
+ 
+   <p> Monaco, France</p>
+
+   <p> 5.0  ⭐⭐⭐⭐⭐ (4,508)</p>
+   <span> from </span>
+      <span class="hotelPrice"> $460 </span>
+</div>
+
+
+    </div>
+
+    <!-- end of fourth hotel  -->
+
+
+
+       <!-- start of fifth hotel -->
+
+    <div class="topHotelsimages">
+
+<a class="hotelsLinks" href="" alt="" > 
+  <img class="hotels"src="/images/hotelMonaco.jpg" alt="The Hôtel de Paris"> 
+  <figcaption class="hotelname"> The Hôtel de Paris </figcaption>
+ 
+</a>
+ <img class="heartIcon " src="/images/LoveIcon.png" alt="heart icon" onclick=" addToLoved()"> 
+
+<div class="hotelCaption">
+ 
+   <p> Monaco, France</p>
+
+   <p> 5.0  ⭐⭐⭐⭐⭐ (4,508)</p>
+   <span> from </span>
+      <span class="hotelPrice"> $460 </span>
+</div>
+
+
+    </div>
+
+    <!-- end of fifth hotel  -->
+
+      <!-- start of sixth hotel -->
+
+    <div class="topHotelsimages">
+
+<a class="hotelsLinks" href="" alt="" > 
+  <img class="hotels"src="/images/hotelMonaco.jpg" alt="The Hôtel de Paris"> 
+  <figcaption class="hotelname"> The Hôtel de Paris </figcaption>
+ 
+</a>
+ <img class="heartIcon " src="/images/LoveIcon.png" alt="heart icon" onclick=" addToLoved()"> 
+
+<div class="hotelCaption">
+ 
+   <p> Monaco, France</p>
+
+   <p> 5.0  ⭐⭐⭐⭐⭐ (4,508)</p>
+   <span> from </span>
+      <span class="hotelPrice"> $460 </span>
+</div>
+
+
+    </div>
+
+    <!-- end of sixth hotel  -->
+
+      <!-- start of seventh hotel -->
+
+    <div class="topHotelsimages">
+
+<a class="hotelsLinks" href="" alt="" > 
+  <img class="hotels"src="/images/hotelMonaco.jpg" alt="The Hôtel de Paris"> 
+  <figcaption class="hotelname"> The Hôtel de Paris </figcaption>
+ 
+</a>
+ <img class="heartIcon " src="/images/LoveIcon.png" alt="heart icon" onclick=" addToLoved()"> 
+
+<div class="hotelCaption">
+ 
+   <p> Monaco, France</p>
+
+   <p> 5.0  ⭐⭐⭐⭐⭐ (4,508)</p>
+   <span> from </span>
+      <span class="hotelPrice"> $460 </span>
+</div>
+
+
+    </div>
+
+    <!-- end of seventh hotel  -->
+
+
+      <!-- start of eighth hotel -->
+
+    <div class="topHotelsimages">
+
+<a class="hotelsLinks" href="" alt="" > 
+  <img class="hotels"src="/images/hotelMonaco.jpg" alt="The Hôtel de Paris"> 
+  <figcaption class="hotelname"> The Hôtel de Paris </figcaption>
+ 
+</a>
+ <img class="heartIcon " src="/images/LoveIcon.png" alt="heart icon" onclick=" addToLoved()"> 
+
+<div class="hotelCaption">
+ 
+   <p> Monaco, France</p>
+
+   <p> 5.0  ⭐⭐⭐⭐⭐ (4,508)</p>
+   <span> from </span>
+      <span class="hotelPrice"> $460 </span>
+</div>
+
+
+    </div>
+
+    <!-- end of eighth hotel  -->
+  </div>
+</div>
+ 
+
+
+  <div class="popUpMessage">
+    <input type="button" id="closeButton" value="✖" onclick="closeaddtoLoved()"> 
+    <img  class="logo" src="images/logo.png" alt="website logo">
+    <p id="popupParas"> Making a list? Sign in to <br> add your saves to a trip<br> you can edit or share.</p>
+
+    <div class="continueButton">
+ 
+<input type="button" class="googleButton" value="Continue With Google ">
+  <img class="googleLogo" src="images/googleLogo.png" alt="googleLogo">
+
+
+  <img class="emailLogo" src="images/emailLogo.png" alt="">
+<input type="button" class="emailButton" value="Continue With Email ">
+    </div>
+
+
+
+<div class="popuptermsParas">
+
+<p> By proceeding, you agree to our 
+  <a class="policiesLinks" href="" >Terms of Use </a>
+  and confirm you have read our
+    <a class="policiesLinks"  href="" > Privacy and Cookie Statement. </a>
+ </p>
+
+ <p>This site is protected by reCAPTCHA and the Google
+  <a class="policiesLinks"  href="">  Privacy Policy  </a> 
+  and 
+  <a class="policiesLinks"  href=""> Terms of Service  </a> 
+  apply 
+ </p>
+
+</div>
+
+
+
+  </div>
+
+</div>
+
+
+
+
+<footer class="footer">
+  <h3> © 2025 Mira Zoubi. All Rights Reserved</h3>
+
+</footer>
+
+<script src="interactive.js"></script>
+</body>
+
+
+
+
+
+</html>
