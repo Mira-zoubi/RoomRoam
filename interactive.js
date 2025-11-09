@@ -1,9 +1,7 @@
-var slider=document.querySelector(".images");
-var images = document.querySelectorAll(".sliderImages"); 
+var slider=document.querySelector(".images");//the box that contains the images
+var images = document.querySelectorAll(".sliderImages"); //every image
 var imagesLength = images.length;
 let index=0;
-
-
 
 function slideImages() {
     index++;
@@ -26,7 +24,7 @@ function staySticky(){
     if(window.scrollY>70){
    
   headingElements.forEach(elements => {
- elements.style.backgroundColor="white";
+ elements.style.backgroundColor="White";
             
         });
        
@@ -67,18 +65,18 @@ overlay.style.display="none";
 }
 
 
-function slideforward(){
-var allImages = document.querySelector(".tophotelsimagesWhole");
-    var widthNum = allImages.clientWidth;
+// function slideforward(){
+// var allImages = document.querySelector(".tophotelsimagesWhole");
+//     var widthNum = allImages.clientWidth;
 
    
-    allImages.style.transform = `translateX(-${widthNum}px)`;
-    allImages.style.transition="transform 0.4s ease ";
+//     allImages.style.transform = `translateX(-${widthNum}px)`;
+//     allImages.style.transition="transform 0.4s ease ";
     
 
 
-    var backsliderButton=document.getElementById("backsliderButton");
-    backsliderButton.style.display="block";
+//     var backsliderButton=document.getElementById("backsliderButton");
+//     backsliderButton.style.display="block";
 
 
-}
+// }
